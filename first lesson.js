@@ -22,8 +22,9 @@ function increment() {
 
 function save() {
     let countStr = count + " - "
+    document.getElementById("save-el").textContent += countStr
+    countEl.innerText = 0
+    count = 0
 
-    saveEl.innerText = countStr
     console.log(count)
 }
-
